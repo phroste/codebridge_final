@@ -1,0 +1,373 @@
+	
+	/*keyframe animation - when webpage loads, h1 title fades in*/
+	@keyframes frames {
+	0% {
+		opacity: 0;
+	}
+	60% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+	/*css for header and nav bar*/
+	h1 {
+		font-family: 'Spectral SC', serif;
+		font-size: 46px;
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		padding-bottom: 50px;
+	}
+
+	/*opacity keyframe animation for h1 logo*/
+	.logoframe {
+		z-index: 1;
+		animation: frames 2s ease-in 0s;
+	}
+
+	body {
+		font-family: 'Open Sans', sans-serif;
+		/*light gray background*/
+		background-color: #F0F0EF;
+	}
+
+	/*parallax visual effect with fixed background image*/
+	/*img src https://www.pexels.com/photo/five-white-plates-with-different-kinds-of-dishes-54455/*/
+	.para {
+		background: url("../images/parabg.jpg") 100% fixed;
+		/*if you do not want a repeating image, use this to fix and enlarge a single background image*/
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0 auto;
+	}
+
+	.parainner {
+		padding: 400px;
+	}
+
+	/*navigation bar styling*/
+	.navbar {
+		display: flex;
+		justify-content: center;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 20px;
+		padding: 5px 10px 10px 10px;
+		margin: 10px;
+	}
+
+
+	/*nav bar drop down menu CSS*/
+
+	/*displays ul & li horizontally on same line*/
+	.nav{
+		display: inline;
+	}
+
+	ul {
+		background-color: #F0F0EF;
+	}
+
+	/*selects ul & a tags*/
+	ul a{
+		display: inline-block;
+		color: black;
+		text-align: center;
+		/*padding - top & bottom: 14px, left & right: 16px*/
+		padding: 14px 16px;
+		/*removes underline from anchor a link tags*/
+		text-decoration: none;
+	}
+
+	/*creates hover/highlight effects*/
+/*	li a:hover, .recipesdropdown:hover {
+		background-color: #2F52E0;
+		background-color: black;
+		color: white;
+		transition: .5s;
+	}*/
+	li a:hover, .recipesdropdown:hover {
+		/*background-color: black;*/
+		color: black;
+		transition: .5s;
+	}
+	
+	/*centers and aligns drop-down menu*/
+	.recipesdropdown {
+		display: inline-block;
+	}
+
+	/*creates the drop-down box & space*/
+	.dropmenu {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		/*gives the border of the drop down menu a shadow*/
+		box-shadow: 0 9px 16px 0 rgba(0,0,0,0.2);
+	}
+
+	/*isolates anchor tags and styles drop down list*/
+	.dropmenu a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	/*gives drop down menu a gray hover effect*/
+	.dropmenu a:hover {
+		background-color: #f1f1f1;
+		/*color: black;*/
+	}
+
+	.recipesdropdown:hover .dropmenu {
+		display: block;
+	}
+
+
+
+	a {
+		text-decoration: none;
+		color: black;
+		cursor: pointer;
+	}
+
+	.navhover:hover {
+		color: gray;
+	}
+
+	#hungry {
+		cursor: pointer;
+	}
+
+	/*social media icons css*/
+	/*https://image.freepik.com/free-vector/social-media-icons_1057-4794.jpg*/
+	#socialmedia {
+		display: flex;
+		justify-content: center;
+	}
+
+	.icons {
+		padding: 20px;
+	}
+
+	.icons:hover {
+		opacity: .5;
+	}
+
+
+	/*index page - css for gallery*/
+	.gallery {
+		display: flex;
+		justify-content: center;
+		/*background-color: white;*/
+	}
+
+	/*changes mouse hover from arrow to pointer*/
+	#slidebuttons {
+		cursor: pointer;
+		position: absolute;
+	}
+
+	/*styles back slideshow button with border radius*/
+	#backbutton {
+		color: white;
+		font-size: 60px;
+		font-weight: bold;
+		padding-top: 220px;
+		background-color: black;
+		border-radius: 30px 0 0 30px;
+		opacity: .1;
+	}
+	#backbutton:hover {
+		opacity: .2;
+	}
+
+	/*styles forward slideshow button with border radius*/
+	#forwardbutton {
+		color: white;
+		font-size: 60px;
+		font-weight: bold;
+		padding-top: 220px;
+		background-color: black;
+		border-radius: 0 30px 30px 0;
+		opacity: .1;
+	}
+	#forwardbutton:hover {
+		opacity: .2;
+	}
+
+
+	/*recipes page - grid layout with images of dishes*/
+
+	h2 {
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+		font-weight: 900;
+	}
+
+
+	.grid1 {
+	  display: grid;
+	  /*1fr gives 1 column inside the grid, 1fr 1fr = 2 columns*/
+	  /*repeat is a shorthand notation. it is the same as grid 
+	  template columns: 1fr 1fr 1fr*/
+	  grid-template-columns: repeat(3, 1fr);
+	  /*space between the boxes/divs*/
+	  grid-gap: 20px;
+	  grid-auto-rows: minmax(100px, auto);
+	  max-width: 1350px;
+	  margin: 0 auto;
+	}
+
+	.grid1 > div {
+	  border: 2px solid rgb(233,171,88);
+	  padding: 16px;
+	  color: black;
+	}
+
+	.grid1 > img {
+	  max-width: 50%;
+	  max-height: 50%;
+	}
+
+
+	/*https://www.chowhound.com/recipes/cheese-mac-cheese-panko-bread-crumb-topping-11582*/
+	.content1 {
+	  grid-column: 1 / 2;
+	  grid-row: 1 / 4;
+	  background-image: url("../images/macaroni2.png");
+	  background-size: cover;
+	  background-position: center;
+	  min-height: 434px;
+	}
+
+
+
+	/*https://www.epicurious.com/recipes/food/views/brown-sugar-baked-apples-105692*/
+	.content2 { 
+	  grid-column: 2 / 3;
+	  grid-row: 1 / 4;
+	  justify-content: center;
+	  background-image: url("../images/apples1.jpg");
+	  background-size: cover;
+	  background-position: center;
+	  min-height: 434px;
+	}
+
+
+	/*https://www.lafujimama.com/milk-shokupan-japanese-style-white-sandwich-bread/*/
+	.content3 {
+	  grid-column: 3 / 4;
+	  grid-row: 1 / 4;
+	  background-image: url("../images/bread8.jpg");
+	  background-size: cover;
+	  background-position: center;
+	  min-height: 434px;
+	}
+
+	/*http://www.foodnetwork.com/recipes/sunny-anderson/pan-roasted-brussels-sprouts-with-bacon-recipe-1944571*/
+	.content4 {
+	  grid-column: 1 / 2;
+	  grid-row: 4 / 7;
+	  background-image: url("../images/brussels1.jpg");
+	  background-size: cover;
+	  background-position: center;
+	  min-height: 434px;
+	}
+
+	/*https://www.vietworldkitchen.com/blog/2008/10/pho-beef-noodle-soup.html*/
+	.content5 {
+	  grid-column: 2 / 3;
+	  grid-row: 4 / 7;
+	  background-image: url("../images/pho3.jpg");
+	  background-size: cover;
+	  background-position: center;
+	  min-height: 434px;
+	}
+
+
+	/*http://www.geniuskitchen.com/recipe/roasted-garlic-mashed-potatoes-the-best-youve-ever-had-68159*/
+	.content6 {
+		grid-column: 3 / 4;
+		grid-row: 4 / 7;
+		background-image: url("../images/potatoes2.jpg");
+		background-size: cover;
+		background-position: center;
+		min-height: 434px;
+	}
+
+
+	/*description divs on images*/
+	/*opacity set to 0, invisible*/
+	.descripbox {
+		background-color: rgba(0,0,0,.2);
+		color: white;
+		opacity: 0;
+	}
+
+	/*on mouse hover, opacity of descripbox becomes visible*/
+	.descripbox:hover {
+		opacity: 1;
+	}
+
+	/*styles p description*/
+	.info1 {
+		padding: 70px;
+		font-size: 20px;
+	}
+
+
+
+	/*flex for all recipe images*/
+	.recipeflex {
+		display: flex;
+		justify-content: space-around;
+
+	}
+
+	/*grid styling for all recipes page*/
+	.grid2 {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-gap: 20px;
+	  /*controls the size of all created grid rows; this case all
+	  rows start at minimum of 100px but grow to fit if content
+	  is taller*/
+	  grid-auto-rows: minmax(100px, auto);
+	  max-width: 1350px;
+	  margin: 0 auto;
+	}
+
+	.about {
+		padding-left: 200px;
+		padding-right: 200px;
+		text-align: left;
+		margin: 100px;
+	}
+
+	.aboutcontent {
+		text-align: left;
+	}
+
+	#applep {
+		cursor: pointer;
+	}
+
+	#appleimg {
+		cursor: pointer;
+	}
+
+
+
+
+
+
+

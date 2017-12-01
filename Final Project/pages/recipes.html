@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What's For Dinner - Recipes</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Spectral+SC" rel="stylesheet">
+	<link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<section class="para">
+		<div class="parainner">
+			<h1 id="logo" class="logoframe">What's for Dinner</h1>
+		</div>
+	</section>
+
+	<div class="navbar">
+		<ul class="nav">
+			<li class="nav"><a href="../index.html">Home</a></li>
+				<li class="nav"><a href="about.html">About</a></li>
+				<li class="nav">
+					<div class="recipesdropdown"><a href="recipes.html">Recipes</a>
+					<div class="dropmenu">
+						<a href="macaroni.html">Panko Macaroni and Cheese</a>
+						<a href="apples.html">Brown Sugar Baked Apples</a>
+						<a href="bread.html">Japanese Milk Bread</a>
+						<a href="brussels.html">Pan Roasted Brussels Sprouts</a>
+						<a href="pho.html">Vietnamese Beef Pho</a>
+						<a href="potatoes.html">Roasted Garlic Mashed Potatoes</a>
+					</div>
+				</li class="nav">
+			<li class="nav"><a href="techniques.html">Techniques</a></li>
+			<li id="hungry" onclick="document.getElementById('logo').innerHTML=`GET COOKING`" class="nav"><a href="#">Hungry?</a></li>
+		</ul>
+	</div>
+
+
+
+	<h2>Recipes</h2>
+
+	<div class="grid1">
+
+	  <a href="macaroni.html">
+	  	<div class="content1">
+	  		<div class="descripbox">
+	  			<p class="info1">Panko Macaroni and Cheese</p>
+	  		</div>
+	  	</div>
+	  </a>
+
+	  <a href="apples.html">
+	  	<div class="content2">
+	  		<div class="descripbox">
+	  			<p class="info1">Brown Sugar Baked Apples</p>
+	  		</div>
+	  	</div>
+	  </a>
+
+	  <a href="bread.html">
+	  	<div class="content3">
+	  		<div class="descripbox">
+	  			<p class="info1">Japanese Milk Bread</p>
+	  		</div>
+	  	</div>
+	  </a>
+
+	  <a href="brussels.html">
+	  	<div class="content4">
+	  		<div class="descripbox">
+				<p class="info1">Pan Roasted Brussels Sprouts</p>
+			</div>
+		</div>
+	  </a>
+
+	  <a href="pho.html">
+	  	<div class="content5">
+	  		<div class="descripbox">
+	  			<p class="info1">Vietnamese Beef Pho</p>
+	  		</div>
+	  	</div>
+	  </a>
+
+	  <a href="potatoes.html">
+	  	<div class="content6">
+	  		<div class="descripbox">
+	  			<p class="info1">Roasted Garlic Mashed Potatoes</p>
+	  		</div>
+	  	</div>
+	  </a>
+	</div>
+
+<br>
+<br>
+<footer>
+		<div id="socialmedia">
+		<table>
+			<tr>
+				<td>
+					<a href="http://www.facebook.com"><img class="icons" src="../images/facebook.png" width="50" height="50"></a>
+				</td>
+
+				<td>
+					<a href="http://www.instagram.com"><img class="icons" src="../images/instagram.png" width="50" height="50"></a>
+				</td>
+
+				<td>
+					<a href="http://www.twitter.com"><img class="icons" src="../images/twitter.png" width="50" height="50"></a>
+				</td>
+
+				<td>
+					<a href="http://www.youtube.com"><img class="icons" src="../images/youtube.png" width="50" height="50"></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+</footer>
+
+
+<script type="text/javascript">
+	//This is to change the h1 logo when you click the "Hungry?" link in navbar
+	var h1Id = document.getElementById('logo');
+	console.log(h1Id);
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What's For Dinner - Recipes</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Spectral+SC" rel="stylesheet">
+	<link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<section class="para">
+		<div class="parainner">
+			<h1 id="logo" class="logoframe">What's for Dinner</h1>
+		</div>
+	</section>
+
+	<div class="navbar">
+		<ul class="nav">
+			<li class="nav"><a href="../index.html">Home</a></li>
+				<li class="nav"><a href="about.html">About</a></li>
+				<li class="nav">
+					<div class="recipesdropdown"><a href="recipes.html">Recipes</a>
+					<div class="dropmenu">
+						<a href="macaroni.html">Panko Macaroni and Cheese</a>
+						<a href="apples.html">Brown Sugar Baked Apples</a>
+						<a href="bread.html">Japanese Milk Bread</a>
+						<a href="brussels.html">Pan Roasted Brussels Sprouts</a>
+						<a href="pho.html">Vietnamese Beef Pho</a>
+						<a href="potatoes.html">Roasted Garlic Mashed Potatoes</a>
+					</div>
+				</li class="nav">
+			<li class="nav"><a href="techniques.html">Techniques</a></li>
+			<li id="hungry" onclick="document.getElementById('logo').innerHTML=`GET COOKING`" class="nav"><a href="#">Hungry?</a></li>
+		</ul>
+	</div>
+
+
+	<div class="about">
+		<h2>About</h2>
+
+		<p class="aboutcontent">Hi, I'm Steven. Growing up, I was privileged to be raised by the best chef in the world - my Mom. This website is dedicated to her for introducing me to one of my favorite passions in the world - cooking. I truly believe that sharing a simple meal is one of the best ways to show someone you care. I hope my humble website shows you how easy it is to prepare a satisfying meal and inspires you to create something delicious. Thanks for visiting!</p>
+
+		<p class="aboutcontent">I am excited to announce that my book, "Family Recipes from the World's Best Chef (Mom)" is currently in pre-production and is scheduled to be released in December 2018! <br> Thank you all for your support!</p>
+	</div>
+
+
+
+
+<footer>
+		<div id="socialmedia">
+		<table>
+			<tr>
+				<td>
+					<a href="http://www.facebook.com"><img class="icons" src="../images/facebook.png" width="50" height="50"></a>
+				</td>
+
+				<td>
+					<a href="http://www.instagram.com"><img class="icons" src="../images/instagram.png" width="50" height="50"></a>
+				</td>
+
+				<td>
+					<a href="http://www.twitter.com"><img class="icons" src="../images/twitter.png" width="50" height="50"></a>
+				</td>
+
+				<td>
+					<a href="http://www.youtube.com"><img class="icons" src="../images/youtube.png" width="50" height="50"></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+</footer>
+
+<script type="text/javascript">
+	//This is to change the h1 logo when you click the "Hungry?" link in navbar
+	var h1Id = document.getElementById('logo');
+	console.log(h1Id);
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
